@@ -1,11 +1,17 @@
 .CurrentDay {
-    height: 35%;
-    width: 100%;
+    height: 34%;
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(42, 119, 192, 0.764);
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgba(57, 108, 159, 0.72);
 }
 
 .NextDay {
-    height: 65%;
-    width: 100%;
+    height: 64%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
