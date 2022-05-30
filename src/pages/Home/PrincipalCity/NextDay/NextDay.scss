@@ -1,9 +1,12 @@
 .Day {
-    width: 45%;
-    height: 45%;
     background-color: rgba(43, 154, 191, 0.826);
-    margin:10px auto;
-    border-radius: 5%;
+    border-radius: 10px;
     border: 1px solid rgb(255, 255, 255);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 90%;
+    padding: 5px;
 }

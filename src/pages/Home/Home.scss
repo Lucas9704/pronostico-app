@@ -1,11 +1,10 @@
 .Home {
-    background-color: rgba(0, 140, 255, 0.678);
-    min-height: 100vh;
+    min-height: 93vh;
 
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .PrincipalCity {
@@ -13,12 +12,51 @@
     flex-direction: column;
     align-items: center;
     height:100%;
+    width: 60%;
 }
 
 .Cities {
-    width: 30%;
-    height: 100%;
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+
+.Day__list {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Others {
+    width: 40%;
+}
+
+.Title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+}
+
+.OthersTitle {
+    display:flex;
+    justify-content: center;
+}
+
+h2 {
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+}
+
+.searchContainer {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }

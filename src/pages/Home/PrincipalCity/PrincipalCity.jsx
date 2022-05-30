@@ -10,7 +10,7 @@ function PrincipalCity() {
 	const [searchParams] = useSearchParams();
 	const searchValue = searchParams.get("search"); //Obtenemos el valor de la busqueda
 	const { data } = useFetch({
-		url: `data/2.5/forecast?q=${searchValue}&lang=es&appid=26db772dcfe2bb3fe3cfea6779059234`,
+		url: `data/2.5/forecast?q=${searchValue}&lang=es&appid=26db772dcfe2bb3fe3cfea6779059234&units=metric`,
 	}); // useFetch({}) es una función que retorna la data de la api
 	if (!data) {
 		return <div>Loading...</div>;
@@ -18,6 +18,7 @@ function PrincipalCity() {
 
 	return (
 		<CityProvider value={{data}}> {/*proveedor del contexto para la data obtenida*/}
+			<h1>{data.city.name}</h1>
 			<section className="CurrentDay"> 
 				<CurrentDay /> {/*Para este componente es conveniente pasar por props la data obtenida*/}
 			</section>

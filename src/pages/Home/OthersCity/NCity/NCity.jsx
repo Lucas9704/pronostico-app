@@ -8,7 +8,7 @@ function NCity() {
     const [city, setCity] = useState("");
 
     function handleSearchClick() {
-        if (searchRef !== "") {
+        if (searchRef.current.value !== "") {
             setCitySearch(true);
             setCity(searchRef.current.value);
         }

@@ -28,14 +28,21 @@ function Home() {
 			<section className="PrincipalCity">
 				{citySearch ? <PrincipalCity />
                 : <div className="searchContainer">
-                    <input id="search" name="search" ref={searchRef} placeholder="Buscar Ciudad" className="searchCity" onKeyDown={handleKeyDown} />
-                    <button className="searchButton" onClick={handleSearchClick}>Buscar</button>
+					<h2>Enter the main city you want to search🔎</h2>
+                    <input id="search" name="search" ref={searchRef} placeholder="Search city" className="searchCity" onKeyDown={handleKeyDown} />
+                    <button className="searchButton" onClick={handleSearchClick}>Search</button>
                 </div>
                 }
 			</section>
-			<section className="Cities">
-				<OthersCity />
+			<section className="Others">
+				<div className="OthersTitle">
+					<h1 className="Title">Others Cities</h1>
+				</div>
+				<section className="Cities">
+					<OthersCity />
+				</section>
 			</section>
+
 		</section>
 	);
 }
