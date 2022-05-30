@@ -5,19 +5,19 @@ function OthersCity() {
     return (
         <>
             <section className="City">
-                <NCity />1
+                <NCity />
             </section>
             <section className="City">
-                <NCity />2
+                <NCity />
             </section>
             <section className="City">
-                <NCity />3
+                <NCity />
             </section>
             <section className="City">
-                <NCity />4
+                <NCity />
             </section>
             <section className="City">
-                <NCity />5
+                <NCity />
             </section>
         </>
     )
