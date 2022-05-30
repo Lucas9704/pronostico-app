@@ -52,11 +52,11 @@ h2 {
 
 .searchContainer {
     display: flex;
-    width: 100%;
-    height: 10%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    position: absolute;
+    top: 50%;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgba(96, 168, 118, 0.715);
+    flex-direction: column;
     align-items: center;
-    align-content: center;
 }
